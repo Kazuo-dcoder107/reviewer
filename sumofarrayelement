@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+   int num;
+   int sum = 0;
+   int single;
+
+   cout<<"Enter the number of elements: ";
+   cin>>num;
+   if(num == 0){
+    cout<<"Sum of elements: 0\n";
+   }
+   else if(num == 1){
+    cout<<"Enter element: ";
+    cin>>single;
+    cout<<"Sum of elements: "<<single<<endl;
+   }
+   else {
+    cout<<"Enter the elements: \n";
+   int array[num];
+    for(int i=1; i<=num; i++){
+        cin>>array[i];
+        int addition = sum += array[i];
+    }
+    cout<<"Sum of elements: "<<sum<<endl;
+}
+    return 0;
+}
