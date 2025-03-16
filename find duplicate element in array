@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int measure;
+    
+    cout<<"Enter the number of elements in the array: ";
+    cin>>measure;
+    cout<<"Enter "<<measure<<" elements in the array: \n";
+    int element[measure];
+    for(int i=0; i<measure; i++){
+        cin>>element[i];
+    }
+    int dupli = 0;
+    for(int i=0; i<measure; i++){
+        for(int j=i+1;j<measure; j++){
+           if( element[i]== element[j]){
+               dupli++;
+            cout<<"Duplicate elements in the array are: "<<element[i];
+            
+             break;  
+        }
+        }
+    }
+  
+           if(dupli==0){
+           cout<<"Duplicate elements in the array are: None";
+           }
+   
+    return 0;
+    
+}
